@@ -1,0 +1,33 @@
+baseURL = 'https://darkflame.dev'
+title = 'Leon Bowie - Software Developer / Educator'
+theme = "awesome-identity"
+
+## Meta Configurations (HTTP Meta tags & OpenGraph)
+[params.meta]
+  description = "DevOps Engineer, Hacker, Educator"
+  keywords = "darkflame72, devops, backend, infrastructure, hacker, engineer, developer, robotics, education"
+  images = [
+    "/images/profile.jpg"
+  ]
+
+[params.profile]
+  portrait = "/images/portrait.png"
+  firstname = "Leon"
+  lastname = "Bowie"
+  title = "Software Developer / Hacker / Educator"
+  bio = "Dedicated technology professional with a strong background in education and leadership. Experience in both the non profit sector and the private sector across software engineering and education in various roles including developer, mentor, team lead and founder. A strong focus on relationships and working with others to either support or lead the team to accomplish goals while ensuring quality and consistency. My experience includes research, teaching, and various volunteer roles, demonstrating my commitment to technology and community engagement."
+
+## Footer Configurations
+[params.footer]
+  copyright = "© 2022-Present Leon Bowie. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  poweredBy = true
+
+## Contacts Configurations
+[params.contacts]
+  email = "leon@darkflame.dev"
+  github = "darkflame72"
+
+## Actions Configurations
+[[params.actions]]
+  name = "Review My CV"
+  url = "https://raw.githubusercontent.com/Darkflame72/site/main/static/cv.pdf"
