@@ -147,7 +147,7 @@
 #section("Work Experience")
 
 #entry("Lead DevOps Engineer", "FNZ", "London, UK", "2021 – Present")[
-  - Leads a team of [N] engineers within the platform engineering organisation, having grown the remit from DevOps delivery to owning all internal developer tooling for 2,000+ developers across multiple regions.
+  - Leads a team within the platform engineering organisation, having grown the remit from DevOps delivery to owning all internal developer tooling for 2,000+ developers across multiple regions.
   - Established FNZ's DevOps Engineering function, defining the practices, operating model, and hiring that established it as a standalone discipline.
   - Owns the developer portal, self-service CI/CD, and source control standards, designing everything as a product to enable adoption and reuse across the organisation.
   - Defined the onboarding playbook for platform integration across 15 acquisitions, bringing acquired engineering teams onto the internal platform.
