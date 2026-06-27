@@ -146,14 +146,14 @@
 
 #section("Work Experience")
 
-#entry("Lead DevOps Engineer", "FNZ", "Wellington, New Zealand", "2021 – Present")[
-  - Founded FNZ's global DevOps Engineering team, building the function from zero and establishing the practices and operating model used globally.
+#entry("Lead DevOps Engineer", "FNZ", "London, UK", "2021 – Present")[
+  - Established FNZ's global DevOps Engineering team, building the function from zero and establishing the practices and operating model used globally.
   - Transitioned the team into a product-centric platform engineering model, expanding scope from DevOps delivery to own all internal developer tooling serving 2,000+ developers.
   - Owns the full internal tooling estate — developer portal, self-service CI/CD, source control standards, and all internal developer tooling — treating each as a platform product with defined ownership, roadmap, and adoption metrics.
   - Led platform integration for 15 acquisitions, defining the onboarding playbook that brought acquired engineering teams onto the internal platform with minimal friction.
 ]
 
-#entry("Contractor", "Te Matatini", "Wellington, New Zealand", "2026 – Present")[
+#entry("Contractor", "Te Matatini", "", "2026 – Present")[
   - Designed and built a complete scoring platform for Aotearoa's national kapa haka festival, used across multiple regional competitions and the national event.
   - Delivered the system end-to-end, architecture, implementation, and deployment.
 ]
