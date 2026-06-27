@@ -137,7 +137,7 @@
 #section("Summary")
 
 #text(fill: graytext)[
-  Platform engineering leader with a track record of building internal developer platforms and engineering functions from the ground up. Founded and scaled FNZ's platform engineering function, defined platform strategy, and drove organisation-wide adoption of self-service developer tooling across multiple regions and acquisitions. Skilled at treating platforms as products, translating engineering investment into measurable developer experience outcomes, and leading high-performing teams through periods of rapid growth.
+  Platform engineering leader specialising in internal tooling and developer experience. At FNZ, founded the global DevOps Engineering function and grew it into a platform team owning the developer portal, self-service CI/CD, and source control standards for 2,000+ engineers across multiple regions. Beyond that, delivers systems hands-on and end-to-end, from a national-scale event scoring platform to founding and running a youth technology-education charity.
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -147,25 +147,25 @@
 #section("Work Experience")
 
 #entry("Lead DevOps Engineer", "FNZ", "London, UK", "2021 – Present")[
-  - Established FNZ's global DevOps Engineering team, building the function from zero and establishing the practices and operating model used globally.
-  - Transitioned the team into a product-centric platform engineering model, expanding scope from DevOps delivery to own all internal developer tooling serving 2,000+ developers.
-  - Owns the full internal tooling estate — developer portal, self-service CI/CD, source control standards, and all internal developer tooling — treating each as a platform product with defined ownership, roadmap, and adoption metrics.
-  - Led platform integration for 15 acquisitions, defining the onboarding playbook that brought acquired engineering teams onto the internal platform with minimal friction.
+  - Leads a team of [N] engineers within the platform engineering organisation, having grown the remit from DevOps delivery to owning all internal developer tooling for 2,000+ developers across multiple regions.
+  - Established FNZ's DevOps Engineering function, defining the practices, operating model, and hiring that established it as a standalone discipline.
+  - Owns the developer portal, self-service CI/CD, and source control standards, designing everything as a product to enable adoption and reuse across the organisation.
+  - Defined the onboarding playbook for platform integration across 15 acquisitions, bringing acquired engineering teams onto the internal platform.
 ]
 
 #entry("Contractor", "Te Matatini", "", "2026 – Present")[
-  - Designed and built a complete scoring platform for Aotearoa's national kapa haka festival, used across multiple regional competitions and the national event.
-  - Delivered the system end-to-end, architecture, implementation, and deployment.
+  - Architected and built the scoring platform for Aotearoa's national kapa haka festival as sole engineer, delivering it end-to-end from architecture to production deployment.
+  - Designed for reliability under live-event conditions, supporting real-time scoring across multiple regional competitions and the national event.
 ]
 
 #entry("Founder and CEO", "Tūhura Tech", "Wellington, New Zealand", "2022 – 2026")[
-  - Established and ran a charitable organisation focused on youth technology education.
-  - Secured funding and sponsorships from government and corporate partners to expand reach, including recognition in the Regional Economic Development Plan.
+  - Founded and led a charitable organisation focused on youth technology education, setting strategy and building the team and operating model from the ground up.
+  - Secured funding and sponsorships from government and corporate partners, including recognition in the Regional Economic Development Plan.
   - Designed and delivered courses spanning game development, robotics, and cyber security to youth aged 9–18.
   - Recognised with multiple awards, including Supreme Charity and Education and Youth Development awards.
 ]
 
-#entry("Research Assistant", "Te Herenga Waka — Victoria University of Wellington", "Wellington, New Zealand", "Oct. 2021 – Nov. 2022")[
+#entry("Research Assistant", "Te Herenga Waka — Victoria University of Wellington", "Wellington, New Zealand", "2021 – 2022")[
   - Designed infrastructure combining cloud SaaS services and custom applications to collect and store IoT sensor data in distributed systems.
   - Contributed to hardware prototyping, research reports, and academic publications.
 ]
@@ -179,10 +179,8 @@
 #award("3rd Place (Team Oceania)", "International Cyber Security Challenge", "2026")
 #award("Winner — Supreme Charity (Tūhura Tech)", "Hutt City Community Awards", "2025")
 #award("Winner — Education and Youth Development (Tūhura Tech)", "Hutt City Community Awards", "2025")
-#award("3rd Place (Australia Guest Team)", "European Cyber Security Competition", "2024 and 2025")
+#award("3rd Place (Australia Guest Team)", "European Cyber Security Competition", "2024, 2025")
 #award("1st Place, Grand Champions", "NZ Cyber Security Competition", "2022")
-#award("3rd Place Tertiary, 5th Overall", "NZ Cyber Security Competition", "2021")
-#award("Wild at Heart Community Spirit Award", "Wellington Airport Community Awards", "2020")
 
 // ─────────────────────────────────────────────────────────────────────────────
 // EDUCATION
@@ -210,5 +208,3 @@
 #role("NZ & Education Coordinator · Vice President of the Board", "DownUnderCTF", "2025")
 #role("Wellington Regional Coordinator", "KiwiBots", "2022 – 2026")
 #role("President of the Victoria Engineering Club", "Te Herenga Waka — Victoria University of Wellington", "2021 – 2022")
-#role("Founded Aspiring Computer Science Trust", "", "2017")
-#role("Code Club Volunteer", "Code Club Aotearoa", "2016 – 2021")
