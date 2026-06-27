@@ -1,33 +1,67 @@
 baseURL = 'https://darkflame.dev'
-title = 'Leon Bowie - Software Developer / Educator'
+title = 'Leon Bowie — Platform Engineering Leader'
 theme = "awesome-identity"
+disableKinds = ["taxonomy", "term"]
 
-## Meta Configurations (HTTP Meta tags & OpenGraph)
 [params.meta]
-  description = "DevOps Engineer, Hacker, Educator"
-  keywords = "darkflame72, devops, backend, infrastructure, hacker, engineer, developer, robotics, education"
-  images = [
-    "/images/profile.jpg"
-  ]
+  description = "Platform engineering leader, engineering manager, and cyber security practitioner based in Wellington, New Zealand."
+  keywords = "leon bowie, platform engineering, devops, engineering manager, developer experience, internal developer platform, cyber security, wellington"
+  images = ["/images/portrait.png"]
 
 [params.profile]
   portrait = "/images/portrait.png"
   firstname = "Leon"
   lastname = "Bowie"
-  title = "Software Developer / Hacker / Educator"
-  bio = "Dedicated technology professional with a strong background in education and leadership. Experience in both the non profit sector and the private sector across software engineering and education in various roles including developer, mentor, team lead and founder. A strong focus on relationships and working with others to either support or lead the team to accomplish goals while ensuring quality and consistency. My experience includes research, teaching, and various volunteer roles, demonstrating my commitment to technology and community engagement."
+  bio = "Platform engineering leader based in Wellington, New Zealand. Built and scaled FNZ's global platform engineering function from the ground up, now serving 2,000+ developers across multiple regions. Founded Tūhura Tech to advance youth technology education, and active in the international cyber security community as a competitor, coach, and organiser."
 
-## Footer Configurations
 [params.footer]
-  copyright = "© 2022-Present Leon Bowie. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
-  poweredBy = true
+  copyright = "© 2022–Present Leon Bowie. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
 
-## Contacts Configurations
-[params.contacts]
-  email = "leon@darkflame.dev"
-  github = "darkflame72"
+[[params.contacts]]
+  icon = "fas fa-envelope"
+  label = "leon@darkflame.dev"
+  url = "mailto:leon@darkflame.dev"
 
-## Actions Configurations
+[[params.contacts]]
+  icon = "fab fa-github"
+  label = "Darkflame72"
+  url = "https://github.com/Darkflame72"
+
+[[params.contacts]]
+  icon = "fab fa-linkedin"
+  label = "LinkedIn"
+  url = "https://linkedin.com/in/leon-bowie"
+
+[[params.contacts]]
+  icon = "fas fa-server"
+  label = "Homelab"
+  url = "https://github.com/Darkflame72/home-ops"
+
+[[params.current]]
+  role = "Lead DevOps Engineer"
+  org = "FNZ"
+  orgUrl = "https://fnz.com"
+  desc = "Founded and leads the platform engineering function serving 2,000+ developers globally"
+  date = "2021 – Present"
+
+[[params.current]]
+  role = "Contractor"
+  org = "Te Matatini"
+  desc = "Built the scoring platform for Aotearoa's national kapa haka festival"
+  date = "2026"
+
+[[params.highlights]]
+  text = "3rd place, International Cyber Security Challenge 2026 — Director of Team Oceania"
+
+[[params.highlights]]
+  text = "Founded Tūhura Tech — Supreme Charity and Education & Youth Development award winner, Hutt City Community Awards 2025"
+
+[[params.highlights]]
+  text = "Led platform integration for 15 acquisitions at FNZ"
+
+[[params.highlights]]
+  text = "1st place, NZ Cyber Security Competition 2022 (Grand Champions)"
+
 [[params.actions]]
-  name = "Review My CV"
-  url = "https://raw.githubusercontent.com/Darkflame72/site/main/static/cv.pdf"
+  name = "View My CV"
+  url = "/cv.pdf"

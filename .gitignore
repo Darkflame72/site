@@ -1,12 +1,16 @@
-### Hugo ###
-# gitginore template for Hugo projects
-# website: https://gohugo.io
+### Build outputs ###
+# CV PDF — generated from cv/resume.typ, not committed
+/static/cv.pdf
 
-# generated files by hugo
+### Tools ###
+/.claude/
+
+### Hugo ###
 /public/
 /resources/_gen/
+/.hugo_build.lock
 
-# executable may be added to repository
+# hugo binaries
 hugo.exe
 hugo.darwin
 hugo.linux

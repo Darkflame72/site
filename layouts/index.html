@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  {{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+  {{ partial "opengraph.html" . }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="site-wrap">
+
+    <header>
+      {{ with .Site.Params.profile }}
+      <div class="portrait" data-initials="{{ substr .firstname 0 1 }}{{ substr .lastname 0 1 }}">
+        {{ with .portrait }}<img src="{{ . }}" alt="{{ $.Site.Params.profile.firstname }} {{ $.Site.Params.profile.lastname }}" onerror="this.style.display='none'">{{ end }}
+      </div>
+      <h1>{{ .firstname }} <strong>{{ .lastname }}</strong></h1>
+      {{ end }}
+
+      {{ with .Site.Params.contacts }}
+      <nav class="contacts">
+        {{ range . }}
+        <a class="contact" href="{{ .url }}"{{ if not (hasPrefix .url "mailto") }} target="_blank" rel="noopener"{{ end }}>
+          <i class="{{ .icon }}" aria-hidden="true"></i>{{ .label }}
+        </a>
+        {{ end }}
+      </nav>
+      {{ end }}
+    </header>
+
+    {{ with .Site.Params.profile.bio }}
+    <p class="bio">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Site.Params.current }}
+    <section>
+      <h2 class="section-heading">Currently</h2>
+      {{ range . }}
+      <div class="role">
+        <div class="role-main">
+          <span class="role-title">{{ .role }}</span>
+          {{ if .orgUrl }}
+          <a class="role-org" href="{{ .orgUrl }}" target="_blank" rel="noopener">{{ .org }}</a>
+          {{ else }}
+          <span class="role-org">{{ .org }}</span>
+          {{ end }}
+          {{ with .desc }}<span class="role-desc">{{ . }}</span>{{ end }}
+        </div>
+        <span class="role-date">{{ .date }}</span>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Site.Params.highlights }}
+    <section>
+      <h2 class="section-heading">Highlights</h2>
+      <ul class="highlights">
+        {{ range . }}<li>{{ .text }}</li>{{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Site.Params.actions }}
+    <div class="actions">
+      {{ range . }}
+      <a class="action" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+
+  <footer class="site-footer">
+    {{ with .Site.Params.footer.copyright }}
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </footer>
+</body>
+</html>

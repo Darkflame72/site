@@ -1,0 +1,48 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install fonts
+        run: sudo apt-get install -y fonts-roboto
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Compile CV
+        run: typst compile --creation-timestamp $(date +%s) cv/resume.typ static/cv.pdf
+        env:
+          TYPST_FONT_PATHS: /usr/share/fonts
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Build site
+        run: hugo --minify
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: site
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
