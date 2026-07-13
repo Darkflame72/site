@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
   portrait = "/images/portrait.png"
   firstname = "Leon"
   lastname = "Bowie"
-  bio = "Platform engineering leader based in Wellington, New Zealand. Built and scaled FNZ's global platform engineering function from the ground up, now serving 2,000+ developers across multiple regions. Founded Tūhura Tech to advance youth technology education, and active in the international cyber security community as a competitor, coach, and organiser."
+  bio = "Platform engineering leader based in Wellington, New Zealand. Helped build and scale FNZ's global platform engineering function from the ground up, now serving 2,000+ developers across multiple regions. Founded Tūhura Tech to advance youth technology education, and active in the international cyber security community as a competitor, coach, and organiser."
 
 [params.footer]
   copyright = "© 2022–Present Leon Bowie. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
