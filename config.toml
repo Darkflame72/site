@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
   portrait = "/images/portrait.png"
   firstname = "Leon"
   lastname = "Bowie"
-  bio = "Platform engineering leader based in Wellington, New Zealand. Helped build and scale FNZ's global platform engineering function from the ground up, now serving 2,000+ developers across multiple regions. Founded Tūhura Tech to advance youth technology education, and active in the international cyber security community as a competitor, coach, and organiser."
+  bio = "Platform engineering leader with five years at FNZ, supporting Kubernetes, observability, the developer portal and the agentic AI platform. Outside work, I founded Tūhura Tech, a youth technology education charity, and coach and organise national teams in the European and International Cybersecurity Challenges."
 
 [params.footer]
   copyright = "© 2022–Present Leon Bowie. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
@@ -41,26 +41,20 @@ disableKinds = ["taxonomy", "term"]
   role = "Lead DevOps Engineer"
   org = "FNZ"
   orgUrl = "https://fnz.com"
-  desc = "Founded and leads the platform engineering function serving 2,000+ developers globally"
+  desc = "Leads platform engineering teams for developer experience and the internal platform, serving 2,000+ developers across multiple regions"
   date = "2021 – Present"
 
-[[params.current]]
-  role = "Contractor"
-  org = "Te Matatini"
-  desc = "Built the scoring platform for Aotearoa's national kapa haka festival"
-  date = "2026"
+[[params.highlights]]
+  text = "18th Place with the UK Cyber Team, European Cybersecurity Challenge 2026"
 
 [[params.highlights]]
-  text = "3rd place, International Cyber Security Challenge 2026 — Director of Team Oceania"
+  text = "3rd Place with Team Oceania, International Cybersecurity Challenge 2026"
 
 [[params.highlights]]
-  text = "Founded Tūhura Tech — Supreme Charity and Education & Youth Development award winner, Hutt City Community Awards 2025"
+  text = "Supreme and Education & Youth Development Winner for Tūhura Tech, Hutt City Community Awards 2025"
 
 [[params.highlights]]
-  text = "Led platform integration for 15 acquisitions at FNZ"
-
-[[params.highlights]]
-  text = "1st place, NZ Cyber Security Competition 2022 (Grand Champions)"
+  text = "Leads the AI platform at FNZ, including AI and MCP gateways and the agentic AI platform"
 
 [[params.actions]]
   name = "View My CV"
