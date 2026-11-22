@@ -1,4 +1,4 @@
-#set document(title: "Leon Bowie: Résumé")
+#set document(title: "Leon Bowie: CV")
 #set page(
   paper: "a4",
   margin: (left: 1.4cm, right: 1.4cm, top: 0.8cm, bottom: 1.5cm),
@@ -7,7 +7,7 @@
     #grid(
       columns: (1fr, 1fr, 1fr),
       [],
-      align(center)[Leon Bowie ··· Résumé],
+      align(center)[Leon Bowie ··· CV],
       align(right)[#counter(page).display()],
     )
   ],
@@ -18,7 +18,7 @@
   indent: 0pt,
   body-indent: 9pt,
   marker: text(fill: rgb("#00A388"), size: 7.5pt, baseline: 0.5pt)[•],
-  spacing: 2pt,
+  spacing: 4pt,
 )
 #show list: set block(above: 3pt, below: 0pt)
 
@@ -26,6 +26,9 @@
 #let darktext  = rgb("#414141")
 #let graytext  = rgb("#5D5D5D")
 #let lighttext = rgb("#999999")
+
+// Placeholder for numbers still to fill in. Renders in red so it can't slip through.
+#let todo(body) = text(fill: red, weight: "bold")[\[#body\]]
 
 // ── Section heading ───────────────────────────────────────────────────────────
 
@@ -48,7 +51,7 @@
 // Row 3: bullet list (optional)
 
 #let entry(title, org, location, date, body) = {
-  block(width: 100%, spacing: 0pt)[
+  block(width: 100%, spacing: 0pt, breakable: false)[
     #grid(
       columns: (1fr, auto),
       column-gutter: 6pt,
@@ -135,7 +138,7 @@
 #section("Summary")
 
 #text(fill: graytext)[
-  Platform engineering leader with five years at FNZ, supporting Kubernetes, observability, the developer portal and the agentic AI platform. I build across Kubernetes, GitOps, observability and developer tooling, in Go, Rust and Python. Outside work, I founded Tūhura Tech, a youth technology education charity, and coach and organise national teams in the European and International Cybersecurity Challenges.
+  Hands-on platform engineering leader who builds systems, then grows the teams that run them. At FNZ I built the AI platform, OpenTelemetry observability, Argo CD GitOps and Backstage platforms used by 2,500+ engineers. I also moved 3,000+ repositories onto GitHub and now lead two teams (15 engineers) that run the platform. I founded Tūhura Tech, a youth technology education charity with 10 paid staff and nearly NZ\$500,000 raised, and coach national teams at the European and International Cybersecurity Challenges.
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -149,14 +152,16 @@
   column-gutter: 10pt,
   row-gutter: 3pt,
   text(weight: "bold", fill: darktext)[Platforms],
-  text(fill: graytext)[Kubernetes, Kubernetes operators, Helm, Argo CD, GitOps, Istio, Terraform, Azure, VMware Tanzu, Backstage, Devcontainers],
+  text(fill: graytext)[Kubernetes, Kubernetes operators, Helm, Argo CD, GitOps, Istio, Terraform, Azure, VMware Tanzu, Linux, Docker, GitHub Actions, Backstage, devcontainers, Kargo],
   text(weight: "bold", fill: darktext)[AI],
-  text(fill: graytext)[AI gateways, MCP gateways, agentic agent infrastructure, AI rollout and governance],
+  text(fill: graytext)[Agentgateway, AI gateways, MCP gateways, agentic AI infrastructure, AI security controls],
+  text(weight: "bold", fill: darktext)[Security],
+  text(fill: graytext)[Kyverno, Infisical, SBOMs, SLSA],
   text(weight: "bold", fill: darktext)[Observability],
   text(fill: graytext)[OpenTelemetry, Grafana, Alertmanager, Mimir, Loki, Tempo],
   text(weight: "bold", fill: darktext)[Languages],
   text(fill: graytext)[Go, Rust, Python, TypeScript, Bash],
-)
+)head
 
 // ─────────────────────────────────────────────────────────────────────────────
 // WORK EXPERIENCE
@@ -165,49 +170,62 @@
 #section("Work Experience")
 
 #entry("Lead DevOps Engineer", "FNZ", "Wellington, NZ and London, UK", "Jul 2024 – Present")[
-  - Leads platform engineering teams focused on developer experience and the internal platform, supporting Kubernetes, observability and other platform services for 2,000+ developers across multiple regions.
-  - Hires and grows engineers across the platform teams.
-  - Designs FNZ's global OpenTelemetry and standard observability platform, covering production.
-  - Designs and introduces the company developer portal on Backstage, and leads developer experience on source code systems.
-  - Leads the AI platform for engineering teams, including AI and MCP gateways, secure AI controls, AI rollout, and the agentic AI platform.
-  - Works closely with AppSec on software supply chain security and compliance (SOC 2, ISO 27001), introducing SBOMs and SLSA standards and improving release processes with dependency automation.
-  - Tracks DORA metrics (lead time, deployment frequency, change failure rate and time to restore) to measure whether platform changes help teams ship faster.
-  - Moves all internal technical documentation into code, making it accessible to developers and AI tools.
-  - Defines the onboarding playbook for bringing acquired engineering teams onto the internal platform across 15 acquisitions.
-  - Owns Terraform-managed systems end to end.
-  - Rolling out on-demand, ephemeral development environments for engineers and AI agents, built on devcontainers.
+  - Lead two platform engineering teams (15 engineers, all personally hired or brought in through internal moves) running the systems below for 2,500+ engineers, and remain accountable architect.
+  - Built the AI platform, and am architecting the AI Gateway, MCP gateways, AI security controls and agentic AI platform.
+  - Build and design FNZ's global OpenTelemetry observability platform end to end to cover 150 clusters and 400 on-premises environments.
+  - Built the internal GitOps platform on Argo CD, cutting internal application deployments from days to under five minutes.
+  - Built the initial Backstage developer portal, adopted by every engineering team and cataloguing 4,000+ components, and own developer experience for source control, ephemeral devcontainer environments for engineers and AI agents, and docs-as-code.
+  - Partner with AppSec on software supply chain security and compliance (SOC 2, ISO 27001), introducing SBOMs and SLSA standards and automating dependency updates in release processes.
+  - Own the playbook for onboarding acquired engineering teams onto the platform, used across 15 acquisitions.
 ]
 
 #entry("DevOps Engineer", "FNZ", "Wellington, NZ", "Sep 2023 – Jul 2024")[
-  - Built FNZ's first DevOps team from scratch and led the consolidation of source control and CI/CD across the organisation and its acquisitions, replacing 10 separate systems with one standard.
-  - Led the DevOps team day to day, setting its priorities and growing its engineers.
+  - Built FNZ's first DevOps team from scratch.
+  - Led the consolidation of source control and CI/CD across the organisation and its acquisitions, moving 3,000+ repositories to GitHub, bringing most of them onto GitHub Actions, and replacing 10 separate systems with one.
+  - Led the team day to day, and began centralising the organisation's technical documentation as docs-as-code.
 ]
 
-#entry("Intern Analyst Developer", "FNZ", "Wellington, NZ", "Jun 2021 – Sep 2023")[
+#entry("Intern Analyst Developer (full-time)", "FNZ", "Wellington, NZ", "Jun 2021 – Sep 2023")[
   - Started as a full stack developer on client delivery projects, then moved into Developer Experience, building tooling and improving release and deployment processes.
-  - Launched the DevOps transformation initiative that led to the creation of the DevOps team.
-  - Began migrating source code systems to GitHub and standardising CI processes.
+  - Launched and led the DevOps transformation initiative while still an intern, making the case that led the business to fund a dedicated team.
+  - Began migrating source code systems to GitHub and standardising CI processes, and wrote FNZ's initial GitHub Apps.
 ]
 
-#entry("Contractor", "Te Matatini", "", "2026 – Present")[
-  - Architects and builds the scoring platform for Aotearoa's national kapa haka festival, from design to production.
-  - Designs for reliability under live-event conditions, supporting real-time scoring across regional competitions and the national event.
+#entry("Contract Software Architect", "Te Matatini", "Remote", "Feb 2026 – Present")[
+  - Sole architect and engineer of the scoring platform for Aotearoa's national kapa haka festival, owning it end to end from design through live operation.
+  - Designed to support real-time scoring by 45 judges across multiple categories and 50+ teams over the five-day national festival, which draws 150,000+ attendees.
+  - Already running live at regional events, proving reliability under live-event conditions ahead of the platform's national festival debut.
 ]
 
-#entry("Founder and CEO", "Tūhura Tech", "Wellington, New Zealand", "Jun 2021 – Mar 2026")[
-  - Founded and led a charitable organisation focused on youth technology education, building its team and operating model from the ground up.
-  - Delivered free technology education to 2,000+ young people over the years.
-  - Secured government and corporate funding and sponsorships, and was recognised in the Regional Economic Development Plan.
+#entry("Founder and CEO", "Tūhura Tech", "Wellington, NZ", "Jun 2021 – Mar 2026")[
+  - Founded and led a youth technology education charity from the ground up, growing a team of 10 paid staff.
+  - Delivered free technology education to 2,000+ young people.
+  - Secured nearly NZ\$500,000 in government and corporate funding; recognised in the Regional Economic Development Plan.
+  - Previously founded Matamoe Community Hub (Nov 2020 – May 2021), free tech education for youth aged 8–18.
 ]
 
-#entry("Research Assistant", "Te Herenga Waka, Victoria University of Wellington", "Wellington, New Zealand", "Oct 2021 – Nov 2022")[
-  - Built and deployed remote sensors and monitoring infrastructure for a research project measuring nitrate levels in water systems, to assess the environmental impact of farming.
-  - Designed cloud and custom applications to collect and store IoT sensor data in distributed systems.
+#entry("Research Assistant", "Te Herenga Waka, Victoria University of Wellington", "Wellington, NZ", "Oct 2021 – Nov 2022")[
+  - Built remote nitrate sensors and the cloud infrastructure to collect and store their IoT data, for research into the environmental impact of farming on water systems.
 ]
 
-#entry("Founder and Head Mentor", "Matamoe Community Hub", "Wellington, New Zealand", "Nov 2020 – May 2021")[
-  - Founded Matamoe Hub, providing free technology education for youth aged 8–18 in Wellington's Eastern Suburbs.
-]
+// ─────────────────────────────────────────────────────────────────────────────
+// COMMUNITY & VOLUNTEERING
+// ─────────────────────────────────────────────────────────────────────────────
+
+#section("Community & Volunteering")
+
+#role("Advisor/Coach, UK Cyber Team", "Women's International Cybersecurity Challenge & European Cybersecurity Challenge", "May 2026 – Present")
+#role("Head Coach, Team Australia; Steering Committee, Team Oceania", "European Cybersecurity Challenge & International Cybersecurity Challenge", "Aug 2025 – May 2026")
+#role("Vice President and Aotearoa Lead (Partnerships, Sponsorships & Outreach)", "DownUnderCTF Inc.", "Jan 2024 – Present")
+#role("Regional Coordinator (Wellington) and Referee", "KiwiBots", "Sep 2021 – Mar 2026")
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PROJECTS
+// ─────────────────────────────────────────────────────────────────────────────
+
+#section("Projects")
+
+#role("Homelab Kubernetes Cluster", [Self-hosted Kubernetes platform for testing and learning industry best practices. Fully GitOps-managed, with a service mesh, distributed storage and scheduled backups, centralised secrets management, observability and published health metrics. Built on Talos Linux, Argo CD, Cilium, Istio, Envoy Gateway, Rook-Ceph, External Secrets with Infisical, and cert-manager. Source: #link("https://github.com/Darkflame72/home-ops")[github.com/Darkflame72/home-ops]], "")
 
 // ─────────────────────────────────────────────────────────────────────────────
 // AWARDS
@@ -215,11 +233,12 @@
 
 #section("Awards")
 
-#award("18th Place (UK Cyber Team)", "European Cybersecurity Challenge", "2026")
-#award("3rd Place (Team Oceania)", "International Cybersecurity Challenge", "2026")
-#award("Supreme and Education & Youth Development Winner, Hutt City (Tūhura Tech)", "Wellington Airport Regional Community Awards", "2025")
-#award("3rd Place (Australia Guest Team)", "European Cybersecurity Challenge", "2024, 2025")
-#award("1st Place, Grand Champions", "NZ Cyber Security Competition", "2022")
+#award("3rd Place, Team Oceania (as coach and steering committee member)", "International Cybersecurity Challenge", "2026")
+#award("18th Place, UK Cyber Team (as advisor/coach, main competition)", "European Cybersecurity Challenge", "2026")
+#award("Supreme Winner and Education & Youth Development Winner (Tūhura Tech)", "Wellington Airport Regional Community Awards, Hutt City", "2025")
+#award("3rd Place, Team Australia, guest team (as coach)", "European Cybersecurity Challenge", "2025")
+#award("3rd Place, Team Australia, guest team (as competitor)", "European Cybersecurity Challenge", "2024")
+#award("1st Place, Grand Champions (as competitor)", "NZ Cyber Security Competition", "2022")
 
 // ─────────────────────────────────────────────────────────────────────────────
 // EDUCATION
@@ -227,37 +246,8 @@
 
 #section("Education")
 
-#entry("BSc in Computer Science", "Te Herenga Waka, Victoria University of Wellington", "Wellington, New Zealand", "2021 – 2023")[
-  - Specialisation in Cyber Security and Machine Learning / Artificial Intelligence
-  - Student Representative and Faculty Delegate
+#entry("BSc in Computer Science", "Te Herenga Waka, Victoria University of Wellington", "Wellington, NZ", "2021 – 2023")[
+  - Completed while working at FNZ.
+  - Specialisation in Cyber Security and Machine Learning / Artificial Intelligence.
+  - Student Representative and Faculty Delegate.
 ]
-
-// ─────────────────────────────────────────────────────────────────────────────
-// CERTIFICATIONS
-// ─────────────────────────────────────────────────────────────────────────────
-
-#section("Certifications")
-
-#award("Introduction to Platform Engineering", "Platform Engineering", "Sep 2025")
-#award("Comprehensive First Aid Certification", "New Zealand Red Cross", "Nov 2022 – Feb 2027")
-
-// ─────────────────────────────────────────────────────────────────────────────
-// HOMELAB
-// ─────────────────────────────────────────────────────────────────────────────
-
-#section("Homelab")
-
-#role("Kubernetes Cluster", [Cloud-native, GitOps-managed Kubernetes cluster with automated updates, secrets and backups, and published health metrics. Source: #link("https://github.com/Darkflame72/home-ops")[github.com/Darkflame72/home-ops]], "")
-
-// ─────────────────────────────────────────────────────────────────────────────
-// COMMUNITY & VOLUNTEERING
-// ─────────────────────────────────────────────────────────────────────────────
-
-#section("Community & Volunteering Highlights")
-
-#role("Advisor/Coach, UK Cyber Team", "Women's International Cybersecurity Challenge & European Cybersecurity Challenge", "May 2026 – Present")
-#role("Head Coach, Team Australia; Steering Committee, Team Oceania", "European Cybersecurity Challenge & International Cybersecurity Challenge", "2025 – 2026")
-#role("Aotearoa Lead, Partnerships & Sponsorships and Outreach; Vice President", "DownUnderCTF (also Vice President, DownUnderCTF Inc.)", "Jan 2024 – Present")
-#role("Regional Coordinator (Wellington) and Referee", "KiwiBots", "Sep 2021 – Mar 2026")
-#role("President, Victoria Engineering Club", "Te Herenga Waka, Victoria University of Wellington", "2021 – 2022")
-#role("Vice President, Victoria Robotics and Mechatronics Club", "Te Herenga Waka, Victoria University of Wellington", "2021")
