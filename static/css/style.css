@@ -93,13 +93,6 @@ h1 strong {
   font-weight: 700;
 }
 
-.tagline {
-  font-size: 0.82rem;
-  color: var(--accent);
-  letter-spacing: 0.05em;
-  margin-bottom: 1.4rem;
-}
-
 /* ── Contacts ────────────────────────────────────────────── */
 
 .contacts {
@@ -296,11 +289,27 @@ section {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #e5e7eb;
+    --accent: #2dd4bf;
+    --accent-dark: #5eead4;
+    --text: #f3f4f6;
     --muted: #9ca3af;
     --light: #6b7280;
-    --border: #374151;
-    --bg: #111827;
+    --border: #2d3748;
+    --bg: #0f172a;
+  }
+}
+
+/* ── Focus & motion ──────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
   }
 }
 

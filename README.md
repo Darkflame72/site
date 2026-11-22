@@ -12,7 +12,6 @@ cv/            Typst CV source
 config.toml    Hugo site config
 content/       Hugo content (empty — single-page site)
 static/        Static assets served by Hugo
-themes/        awesome-identity Hugo theme
 
 Justfile       Build tasks
 shell.nix      Nix dev shell (Typst + Hugo + just)

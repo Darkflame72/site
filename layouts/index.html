@@ -6,7 +6,11 @@
   <title>{{ .Site.Title }}</title>
   {{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
   {{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
-  {{ partial "opengraph.html" . }}
+  <meta property="og:title" content="{{ .Title }}">
+  {{ with .Site.Params.meta.description }}<meta property="og:description" content="{{ . }}">{{ end }}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ range first 6 .Site.Params.meta.images }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">

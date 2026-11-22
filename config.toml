@@ -1,6 +1,5 @@
 baseURL = 'https://darkflame.dev'
 title = 'Leon Bowie — Platform Engineering Leader'
-theme = "awesome-identity"
 disableKinds = ["taxonomy", "term"]
 
 [params.meta]
@@ -12,7 +11,7 @@ disableKinds = ["taxonomy", "term"]
   portrait = "/images/portrait.png"
   firstname = "Leon"
   lastname = "Bowie"
-  bio = "Platform engineering leader with five years at FNZ, supporting Kubernetes, observability, the developer portal and the agentic AI platform. Outside work, I founded Tūhura Tech, a youth technology education charity, and coach and organise national teams in the European and International Cybersecurity Challenges."
+  bio = "Platform engineering leader at FNZ, supporting Kubernetes, observability, the developer portal and the agentic AI platform. Outside work, I founded Tūhura Tech, a youth technology education charity, and coach and organise national teams in the European and International Cybersecurity Challenges."
 
 [params.footer]
   copyright = "© 2022–Present Leon Bowie. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
