@@ -178,12 +178,12 @@
   - Rolling out on-demand, ephemeral development environments for engineers and AI agents, built on devcontainers.
 ]
 
-#entry("DevOps Engineer", "FNZ", "Wellington, NZ and London, UK", "Sep 2023 – Jul 2024")[
+#entry("DevOps Engineer", "FNZ", "Wellington, NZ", "Sep 2023 – Jul 2024")[
   - Built FNZ's first DevOps team from scratch and led the consolidation of source control and CI/CD across the organisation and its acquisitions, replacing 10 separate systems with one standard.
   - Led the DevOps team day to day, setting its priorities and growing its engineers.
 ]
 
-#entry("Intern Analyst Developer", "FNZ", "Wellington, NZ and London, UK", "Jun 2021 – Sep 2023")[
+#entry("Intern Analyst Developer", "FNZ", "Wellington, NZ", "Jun 2021 – Sep 2023")[
   - Started as a full stack developer on client delivery projects, then moved into Developer Experience, building tooling and improving release and deployment processes.
   - Launched the DevOps transformation initiative that led to the creation of the DevOps team.
   - Began migrating source code systems to GitHub and standardising CI processes.

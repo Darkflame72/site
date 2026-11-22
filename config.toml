@@ -3,8 +3,8 @@ title = 'Leon Bowie — Platform Engineering Leader'
 disableKinds = ["taxonomy", "term"]
 
 [params.meta]
-  description = "Platform engineering leader, engineering manager, and cyber security practitioner based in Wellington, New Zealand."
-  keywords = "leon bowie, platform engineering, devops, engineering manager, developer experience, internal developer platform, cyber security, wellington"
+  description = "Platform engineering leader, engineering manager, and cyber security practitioner."
+  keywords = "leon bowie, platform engineering, devops, engineering manager, developer experience, internal developer platform, cyber security, agentic, ai"
   images = ["/images/portrait.png"]
 
 [params.profile]
