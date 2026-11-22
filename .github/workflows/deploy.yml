@@ -17,13 +17,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Install fonts
         run: sudo apt-get install -y fonts-roboto
 
       - name: Install Typst
-        uses: typst-community/setup-typst@v5
+        uses: typst-community/setup-typst@00ad6338f0b34724ea002136bfb701a6c18585b0 # v5
 
       - name: Compile CV
         run: typst compile --creation-timestamp $(date +%s) cv/resume.typ static/cv.pdf
@@ -31,7 +31,7 @@ jobs:
           TYPST_FONT_PATHS: /usr/share/fonts
 
       - name: Install Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@d1c81a15d4e6dca7086a17b9c2565cb70fd576bf # v3
         with:
           hugo-version: latest
           extended: true
@@ -40,7 +40,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v4
+        uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
