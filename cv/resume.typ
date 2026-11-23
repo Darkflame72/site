@@ -175,7 +175,7 @@
 #section("Summary")
 
 #text(fill: graytext)[
-  Hands-on platform engineer and architect, now leading two platform teams at FNZ. I designed and led the build of FNZ's AI platform and its OpenTelemetry observability, Argo CD GitOps and Backstage platforms, used by 2,500+ engineers, and consolidated 3,000+ repositories onto GitHub. Outside FNZ, I founded Tūhura Tech, a youth technology education charity, growing it to 10 paid staff and raising nearly NZ\$500,000, and coach national teams at the European and International Cybersecurity Challenges.
+  Hands-on platform engineer and architect leading two platform teams at FNZ, grown from the company's first DevOps team. I designed and built FNZ's AI platform, giving engineers secure access to OpenAI and Anthropic models through Agentgateway and Microsoft Foundry. I also built its OpenTelemetry observability, Argo CD GitOps and Backstage platforms, used by 2,500+ engineers, and consolidated 3,000+ repositories from 10 systems onto GitHub. Outside FNZ, I founded Tūhura Tech, a youth technology education charity that grew to 10 paid staff and raised nearly NZ\$500,000, and I coach national teams at the European and International Cybersecurity Challenges.
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -188,14 +188,14 @@
   columns: (auto, 1fr),
   column-gutter: 10pt,
   row-gutter: 3pt,
+  text(weight: "bold", fill: darktext)[AI],
+  text(fill: graytext)[Agentgateway (AI and MCP gateways), Microsoft Foundry, OpenAI and Anthropic models, agentic AI infrastructure],
   text(weight: "bold", fill: darktext)[Platforms],
   text(fill: graytext)[Kubernetes, Helm, Argo CD (GitOps), Terraform, Azure, Docker, GitHub Actions, Istio, Backstage],
-  text(weight: "bold", fill: darktext)[AI],
-  text(fill: graytext)[AI gateways, MCP gateways, agentic AI infrastructure],
   text(weight: "bold", fill: darktext)[Security],
-  text(fill: graytext)[Kyverno, secrets management, SBOMs, SLSA],
+  text(fill: graytext)[Kyverno, Sigstore/cosign, secrets management, SBOMs, SLSA],
   text(weight: "bold", fill: darktext)[Observability],
-  text(fill: graytext)[OpenTelemetry,, Grafana, Mimir, Loki, Tempo],
+  text(fill: graytext)[OpenTelemetry, Grafana, Mimir, Loki, Tempo],
   text(weight: "bold", fill: darktext)[Languages],
   text(fill: graytext)[Go, Rust, Python, TypeScript, Bash],
 )
@@ -208,25 +208,26 @@
 
 #company("FNZ", "Wellington, NZ and London, UK", "Jun 2021 – Present")[
 #subrole("Lead DevOps Engineer", "Jul 2024 – Present")[
-  - Built both teams from zero, and remain the architect responsible for a platform serving 2,500+ engineers.
-  - Built the AI platform including the AI gateway, MCP gateways, AI security controls and agentic AI development infrastructure.
+  - Grew FNZ's first DevOps team into two platform teams, which I lead, and own the architecture of the internal platform serving 2,500+ engineers.
+  - Designed and built FNZ's AI platform: AI and MCP gateways on Agentgateway in front of OpenAI and Anthropic models on Microsoft Foundry, with security controls and infrastructure for agentic AI development.
   - Designed and built FNZ's global OpenTelemetry observability platform, spanning 150 clusters and 400 on-premises environments.
-  - Built the internal GitOps platform on Argo CD, cutting internal application deployments from days to under five minutes.
-  - Built the initial Backstage developer portal, adopted by every engineering team and cataloguing 4,000+ components, and own developer experience for source control, ephemeral devcontainer environments for engineers and AI agents, and docs-as-code.
-  - Partner with AppSec on software supply chain security and compliance (SOC 2, ISO 27001), introducing SBOMs and SLSA standards and automating dependency updates in release processes.
-  - Own the playbook for onboarding acquired engineering teams onto the platform, used across 15 acquisitions.
+  - Delivered the internal GitOps platform on Argo CD, cutting internal application deployments from days to under five minutes.
+  - Launched FNZ's Backstage developer portal, adopted by every engineering team and cataloguing 4,000+ components.
+  - Own developer experience across source control, docs-as-code, and ephemeral devcontainer environments for both engineers and AI agents.
+  - Wrote and own the playbook for onboarding acquired engineering teams onto the platform, used across 15 acquisitions.
+  - Partner with AppSec on supply chain security for SOC 2 and ISO 27001, introducing SBOMs, Sigstore/cosign artefact signing and SLSA, and automating dependency updates in release pipelines.
 ]
 
 #subrole("DevOps Engineer", "Sep 2023 – Jul 2024")[
   - Built FNZ's first DevOps team from scratch and led it day to day.
-  - Led the consolidation of source control and CI/CD across the organisation and its acquisitions, moving 3,000+ repositories to GitHub, bringing most of them onto GitHub Actions, and replacing 10 separate systems with one.
-  - Began centralising the organisation's technical documentation as docs-as-code.
+  - Led the consolidation of source control and CI/CD across FNZ and its acquisitions, replacing 10 separate systems with GitHub, migrating 3,000+ repositories and moving most of them onto GitHub Actions.
+  - Started FNZ's move to docs-as-code, centralising technical documentation from across the organisation.
 ]
 
 #subrole("Intern Analyst Developer (full-time)", "Jun 2021 – Sep 2023")[
-  - Started as a full-stack developer on client delivery projects, then moved into Developer Experience, building tooling and improving release and deployment processes.
-  - Launched and led the DevOps transformation initiative while still an intern, making the case that led the business to fund a dedicated team.
-  - Began migrating source code systems to GitHub and standardising CI processes, and wrote FNZ's initial GitHub Apps.
+  - Started as a full-stack developer on client delivery projects before moving into Developer Experience to build tooling and improve release and deployment processes.
+  - Launched and led FNZ's DevOps transformation initiative while still an intern; my business case led to funding for a dedicated team.
+  - Started the migration of source control to GitHub, standardised CI processes and wrote FNZ's first GitHub Apps.
 ]
 ]
 
@@ -241,10 +242,6 @@
   - Delivered free technology education to 2,000+ young people.
   - Secured nearly NZ\$500,000 in government and corporate funding; recognised in the Regional Economic Development Plan.
   - Previously founded Matamoe Community Hub (Nov 2020 – May 2021), free tech education for youth aged 8–18.
-]
-
-#entry("Research Assistant", "Te Herenga Waka, Victoria University of Wellington", "Wellington, NZ", "Oct 2021 – Nov 2022")[
-  - Built remote nitrate sensors and the cloud infrastructure to collect and store their IoT data, for research into the environmental impact of farming on water systems.
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
