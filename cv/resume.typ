@@ -152,16 +152,16 @@
   column-gutter: 10pt,
   row-gutter: 3pt,
   text(weight: "bold", fill: darktext)[Platforms],
-  text(fill: graytext)[Kubernetes, Kubernetes operators, Helm, Argo CD, GitOps, Istio, Terraform, Azure, VMware Tanzu, Linux, Docker, GitHub Actions, Backstage, devcontainers, Kargo],
+  text(fill: graytext)[Kubernetes, Helm, GitOps, Terraform, Azure, Docker, GitHub Actions, Backstage],
   text(weight: "bold", fill: darktext)[AI],
-  text(fill: graytext)[Agentgateway, AI gateways, MCP gateways, agentic AI infrastructure, AI security controls],
+  text(fill: graytext)[AI gateways, MCP gateways, agentic AI infrastructure],
   text(weight: "bold", fill: darktext)[Security],
-  text(fill: graytext)[Kyverno, Infisical, SBOMs, SLSA],
+  text(fill: graytext)[Kyverno, Secrets Management, SBOMs, SLSA],
   text(weight: "bold", fill: darktext)[Observability],
-  text(fill: graytext)[OpenTelemetry, Grafana, Alertmanager, Mimir, Loki, Tempo],
+  text(fill: graytext)[OpenTelemetry, Grafana, Mimir, Loki, Tempo],
   text(weight: "bold", fill: darktext)[Languages],
   text(fill: graytext)[Go, Rust, Python, TypeScript, Bash],
-)head
+)
 
 // ─────────────────────────────────────────────────────────────────────────────
 // WORK EXPERIENCE
@@ -170,7 +170,7 @@
 #section("Work Experience")
 
 #entry("Lead DevOps Engineer", "FNZ", "Wellington, NZ and London, UK", "Jul 2024 – Present")[
-  - Lead two platform engineering teams (15 engineers, all personally hired or brought in through internal moves) running the systems below for 2,500+ engineers, and remain accountable architect.
+  - Led two platform engineering teams (15 engineers, all personally hired or brought in through internal moves) serving 2,500+ engineers, and remain accountable architect.
   - Built the AI platform, and am architecting the AI Gateway, MCP gateways, AI security controls and agentic AI platform.
   - Build and design FNZ's global OpenTelemetry observability platform end to end to cover 150 clusters and 400 on-premises environments.
   - Built the internal GitOps platform on Argo CD, cutting internal application deployments from days to under five minutes.
