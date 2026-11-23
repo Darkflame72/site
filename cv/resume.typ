@@ -175,7 +175,7 @@
 #section("Summary")
 
 #text(fill: graytext)[
-  Hands-on platform engineer and architect, now leading two platform teams (15 engineers) at FNZ. I designed and led the build of FNZ's AI platform and its OpenTelemetry observability, Argo CD GitOps and Backstage platforms, used by 2,500+ engineers, and consolidated 3,000+ repositories onto GitHub. Outside FNZ, I founded Tūhura Tech, a youth technology education charity, growing it to 10 paid staff and raising nearly NZ\$500,000, and coach national teams at the European and International Cybersecurity Challenges.
+  Hands-on platform engineer and architect, now leading two platform teams at FNZ. I designed and led the build of FNZ's AI platform and its OpenTelemetry observability, Argo CD GitOps and Backstage platforms, used by 2,500+ engineers, and consolidated 3,000+ repositories onto GitHub. Outside FNZ, I founded Tūhura Tech, a youth technology education charity, growing it to 10 paid staff and raising nearly NZ\$500,000, and coach national teams at the European and International Cybersecurity Challenges.
 ]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -208,7 +208,7 @@
 
 #company("FNZ", "Wellington, NZ and London, UK", "Jun 2021 – Present")[
 #subrole("Lead DevOps Engineer", "Jul 2024 – Present")[
-  - Built both teams from zero, hiring or transferring in all 15 engineers, and remain the architect responsible for a platform serving 2,500+ engineers.
+  - Built both teams from zero, and remain the architect responsible for a platform serving 2,500+ engineers.
   - Built the AI platform including the AI gateway, MCP gateways, AI security controls and agentic AI development infrastructure.
   - Designed and built FNZ's global OpenTelemetry observability platform, spanning 150 clusters and 400 on-premises environments.
   - Built the internal GitOps platform on Argo CD, cutting internal application deployments from days to under five minutes.
